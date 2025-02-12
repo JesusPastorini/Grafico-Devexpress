@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdderiGrafico>
+	<Style>
+		<Type>StackedBar</Type> <!--Bar, FullStackedBar, StackedBar, SideBySideFullStackedBar, Point, HighLowCloseSeries, RadarLine, Funnel-->
+		<BackgroundTransparent>False</BackgroundTransparent>
+		<BackgroundColor>#836FFF</BackgroundColor>
+	</Style>
+	<Title>
+		<Visible>True</Visible>
+		<Text>Vendas</Text>
+		<Font>Times New Roman</Font>
+		<Size>25</Size>
+		<Style>Regular</Style>
+		<Color>#8B0000</Color>
+	</Title>
+	<TitleX>
+		<Visible>True</Visible>
+		<Text>Data</Text>
+		<Font>Calibri</Font>
+		<Size>16</Size>
+		<Style>Strikeout</Style>
+		<Color>#98FB98</Color>
+	</TitleX>
+	<LabelX>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>9</Size>
+		<Color>#FF8C00</Color>
+		<LineWidth>1</LineWidth>
+		<LeftMargin>1</LeftMargin>
+	</LabelX>
+	<TitleY>
+		<Visible>True</Visible>
+		<Text>Valores</Text>
+		<Font>Calibri</Font>
+		<Size>16</Size>
+		<Style>Strikeout</Style>
+		<Color>#98FB98</Color>
+	</TitleY>
+	<LabelY>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>9</Size>
+		<Color>#FFFF00</Color>
+		<LineWidth>1</LineWidth>
+		<Picture>{V:0}%</Picture>
+	</LabelY>
+	<Legend>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>10</Size>
+		<Style>Bold</Style>
+		<Color>#00BFFF</Color>
+		<BackgroundOpacity>200</BackgroundOpacity>
+		<BackgroundTransparent>True</BackgroundTransparent>
+		<BackgroundColor>#FFFFFF</BackgroundColor>
+		<DirectionHorizontal>True</DirectionHorizontal>
+		<PercentageHorizontal>25</PercentageHorizontal>
+		<PositionHorizontal>RightOutside</PositionHorizontal>
+		<PositionVertical>Top</PositionVertical>
+		<MarkerWidth>13</MarkerWidth>
+		<MarkerHeight>9</MarkerHeight>
+	</Legend>
+	<Area>
+		<Grade>False</Grade>
+		<Border>False</Border>
+		<OrientationXY>True</OrientationXY>
+		<RotationX>-90</RotationX>
+		<RotationY>0</RotationY>
+		<Color>#708090</Color>
+		<BlockSize>0,6</BlockSize>
+	</Area>
+	<Series>
+		<Serie>
+			<Text>Valor Contrato</Text>
+			<Color>#FF5733</Color>
+			<Label>
+				<Visible>True</Visible>
+				<Position>Center</Position> <!-- HighLowCloseSeries = Top, Center. || Bar = Top, Center, Auto. || FullStackedBar = Center. -->
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<Style>Regular</Style>
+				<Color>#1C1C1C</Color>
+				<BackgroundTransparent>True</BackgroundTransparent>
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<Picture>{V:0}%</Picture>
+			</Label>
+		</Serie>
+		<Serie>
+			<Text>Juros</Text>
+			<Color>#DC143C</Color>
+			<Label>
+				<Visible>True</Visible>
+				<Position>Center</Position> <!---->
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<Style>Strikeout</Style>
+				<Color>#00FF7F</Color>
+				<BackgroundTransparent>True</BackgroundTransparent>
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<Picture>{V:0}%</Picture>
+			</Label>
+		</Serie>
+		<Serie>
+			<Text>Parcelado</Text>
+			<Color>#DC143C</Color>
+			<Label>
+				<Visible>True</Visible>
+				<Position>Center</Position> <!---->
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<Style>Strikeout</Style>
+				<Color>#00FF7F</Color>
+				<BackgroundTransparent>True</BackgroundTransparent>
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<Picture>{V:0}%</Picture>
+			</Label>
+		</Serie>
+	</Series>
+	<Data>
+    <Line>
+        <Text>Mês 1</Text>
+        <Series>
+            <Serie>30</Serie>
+            <Serie>50</Serie>
+			<Serie>10</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Fevereiro 2022</Text>
+        <Series>
+            <Serie>35</Serie>
+            <Serie>20</Serie>
+			<Serie>50</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 3</Text>
+        <Series>
+            <Serie>40</Serie>
+            <Serie>10</Serie>
+			<Serie>5</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 4</Text>
+        <Series>
+            <Serie>60</Serie>
+            <Serie>30</Serie>
+			<Serie>10</Serie>			
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 5</Text>
+        <Series>
+            <Serie>20</Serie>
+            <Serie>5</Serie>
+			<Serie>30</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 6</Text>
+        <Series>
+            <Serie>50</Serie>
+            <Serie>30</Serie>
+			<Serie>60</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 7</Text>
+        <Series>
+            <Serie>60</Serie>
+            <Serie>35</Serie>
+			<Serie>20</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 8</Text>
+        <Series>
+            <Serie>65</Serie>
+            <Serie>40</Serie>
+			<Serie>50</Serie>
+        </Series>
+    </Line>
+    <Line>
+        <Text>Mês 9</Text>
+        <Series>
+            <Serie>70</Serie>
+            <Serie>45</Serie>
+			<Serie>30</Serie>
+        </Series>
+    </Line>
+</Data>
+</AdderiGrafico>

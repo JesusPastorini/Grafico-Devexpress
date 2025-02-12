@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdderiGrafico>
+	<Style>
+		<Type>Pie</Type><!-- Bar, Line, Spline, StepLine, ScatterLine, Point, Area, StackedArea, FullStackedArea, StepArea, SplineArea
+StackedSplineArea, FullStackedSplineArea , HighLowCloseSeries, RadarLine, Funnel	-->
+		<BackgroundTransparent>False</BackgroundTransparent>
+		<BackgroundColor>#836FFF</BackgroundColor>
+	</Style>
+	<Title>
+		<Visible>True</Visible>
+		<Text>Vendas</Text>
+		<Font>Calibri</Font>
+		<Size>25</Size>
+		<Style>Strikeout</Style>
+		<Color>#8B0000</Color>
+	</Title>
+	<TitleX><!-- gráfico de pizza não gera esse grupo -->
+		<Visible>True</Visible>
+		<Text>Data</Text>
+		<Font>Calibri</Font>
+		<Size>16</Size>
+		<Style>Strikeout</Style>
+		<Color>#98FB98</Color>
+	</TitleX>
+	<LabelX><!-- gráfico de pizza não gera esse grupo -->
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>9</Size>
+		<Color>#FF8C00</Color>
+		<LineWidth>1</LineWidth>
+		<LeftMargin>0,4</LeftMargin>
+	</LabelX>
+	<TitleY><!-- gráfico de pizza não gera esse grupo -->
+		<Visible>True</Visible>
+		<Text>Valores</Text>
+		<Font>Calibri</Font>
+		<Size>16</Size>
+		<Style>Strikeout</Style>
+		<Color>#98FB98</Color>
+	</TitleY>
+	<LabelY><!-- gráfico de pizza não gera esse grupo -->
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>9</Size>
+		<Color>#FFFF00</Color>
+		<LineWidth>1</LineWidth>
+		<Picture>{V:0}%</Picture>
+	</LabelY>
+	<Legend>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>22</Size>
+		<Style>Strikeout</Style>
+		<Color>#00BFFF</Color>
+		<BackgroundOpacity>200</BackgroundOpacity>
+		<BackgroundTransparent>True</BackgroundTransparent>
+		<BackgroundColor>#FFFFFF</BackgroundColor>
+		<DirectionHorizontal>True</DirectionHorizontal>
+		<PercentageHorizontal>25</PercentageHorizontal>
+		<PositionHorizontal>Right</PositionHorizontal>
+		<PositionVertical>Top</PositionVertical>
+		<MarkerWidth>13</MarkerWidth>
+		<MarkerHeight>9</MarkerHeight>
+		<Picture>{A}</Picture><!-- Apenas Graficos Pie e Doughnut -->
+	</Legend>
+	<Area><!-- gráfico de pizza não gera esse grupo -->
+		<Grade>False</Grade>
+		<Border>False</Border>
+		<OrientationXY>False</OrientationXY>
+		<RotationX>-80</RotationX>
+		<RotationY>0</RotationY>
+		<Color>#708090</Color>
+		<BlockSize>0,6</BlockSize>
+	</Area>
+	<Series>
+		<Serie>
+			<Text>Valor Contrato</Text>
+			<Color>#FF5733</Color>
+			<Border>True</Border><!-- somente gráfico de pizza -->
+			<LineWidth>2</LineWidth><!-- somente gráfico de pizza -->
+			<Label>
+				<Visible>True</Visible>
+				<Border>False</Border><!-- somente gráfico de pizza -->
+				<Position>TwoColumns</Position> <!-- Top, Center, Inside, InsideTop, InsideBottom , Outside, OutsideTop. 
+				StepLine = Top, Outside.
+				HighLowCloseSeries = Top, Center.
+				Line/Area = Center, Outside.
+				Bar = Top, Center, Auto.
+				-->
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<Style>Regular</Style>
+				<Color>#1C1C1C</Color>
+				<BackgroundTransparent>True</BackgroundTransparent>
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<Picture>{V:0}%</Picture>
+				<Marker><!-- Apenas grupos Line e Area -->
+					<Visible>True</Visible> <!-- Apenas grupos Line e Area -->
+					<Size>15</Size> <!-- Apenas grupos Line e Area -->
+					<Color>#FF7F50</Color> <!-- Apenas grupos Line e Area -->
+					<Kind>Plus</Kind> <!-- Apenas grupos Line e Area // Star, Circle, Square, Diamond, Triangle, InvertedTriangle, Cross, Plus. -->
+					<BorderVisible>True</BorderVisible> <!-- Apenas grupos Line e Area -->
+					<BorderColor>#2F4F4F</BorderColor> <!-- Apenas grupos Line e Area -->
+				</Marker><!-- Apenas grupos Line e Area -->
+			</Label>
+		</Serie>
+	</Series>
+	<Data>
+		<Line>
+			<Text>Janeiro</Text>
+			<Color>#FF4500</Color><!-- somente gráfico de pizza -->
+			<MovieSlice>15</MovieSlice><!-- somente gráfico de pizza -->
+			<Series>
+				<Serie>30</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Fevereiro</Text>
+			<Color>#4B0082</Color><!-- somente gráfico de pizza -->
+			<MovieSlice>0</MovieSlice><!-- somente gráfico de pizza -->
+			<Series>
+				<Serie>40</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Março</Text>
+			<Color>#00FF00</Color><!-- somente gráfico de pizza -->
+			<MovieSlice>40</MovieSlice><!-- somente gráfico de pizza -->
+			<Series>
+				<Serie>80</Serie>
+			</Series>
+		</Line>
+	</Data>
+</AdderiGrafico>

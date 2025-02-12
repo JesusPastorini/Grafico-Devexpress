@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdderiGrafico>
+	<Style>
+		<!-- Opções Type: Doughnut, Pie -->
+		<Type>Doughnut</Type>
+		<BackgroundTransparent>False</BackgroundTransparent><!--Fundo total trasparente-->
+		<BackgroundColor>#836FFF</BackgroundColor>
+	</Style>
+	<Title>
+		<Visible>True</Visible>
+		<Text>Vendas</Text>
+		<Font>Calibri</Font>
+		<Size>25</Size>
+		<Style>Strikeout</Style>
+		<Color>#8B0000</Color>
+	</Title>
+	<Legend>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>22</Size>
+		<Style>Strikeout</Style>
+		<Color>#00BFFF</Color>
+		<BackgroundOpacity>200</BackgroundOpacity><!--Nivel de trasparência do fundo da legenda-->
+		<BackgroundTransparent>True</BackgroundTransparent>
+		<BackgroundColor>#FFFFFF</BackgroundColor>
+		<DirectionHorizontal>True</DirectionHorizontal><!--true horizontal // false vertical-->
+		<PercentageHorizontal>25</PercentageHorizontal><!-- % até a quebra de linha-->
+		<!--Opções PositionHorizontal: Left, Center, Right, RightOutside, LeftOutside-->
+		<PositionHorizontal>Right</PositionHorizontal>
+		<!--Opções PositionVertical: Top, Center, Bottom, BottomOutside, TopOutside-->
+		<PositionVertical>Top</PositionVertical>
+		<MarkerWidth>13</MarkerWidth><!--Largura do marcador da legenda-->
+		<MarkerHeight>9</MarkerHeight><!--Altura do marcador da legenda-->
+		<Picture>{A}</Picture>
+	</Legend>
+	<Series>
+		<Serie>
+			<Text>Valor Contrato</Text>
+			<Color>#ADD8E6</Color>
+			<Border>True</Border>
+			<LineWidth>2</LineWidth><!--Espessura da linha de contorno da pizza.-->
+			<Label>
+				<Visible>True</Visible>
+				<Border>False</Border>
+				<!-- Opões Position: Radial, Tangent, TwoColumns, Outside, Inside -->
+				<Position>Inside</Position>
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<!--Opções Style: Regular, Bold, Italic, Underline, Strikeout.-->
+				<Style>Regular</Style>
+				<Color>#1C1C1C</Color>
+				<BackgroundTransparent>True</BackgroundTransparent><!--Sem fundo de rótulo-->
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<!--Opções Picture: {A} = Texto dos dados //{V} = Valor dos dados // {S} = Nome da série // {VP:P} = Porcentagem do valor total // {V:F2} = Formata o valor com 2 casas decimais // {V:C} = Formata o valor como moeda // {VP:P2} = Mostra a porcentagem com 2 casas decimais // {V:0}% = Exibe o valor inteiro da serie com o simbolo de % // R${V:N2} = Valor em reais com duas casas decimais {A:dd/MM/yyyy HH:mm:ss} = Formatação data e hora -->
+				<Picture>{V:0}%</Picture>
+			</Label>
+		</Serie>
+	</Series>
+	<Data>
+		<Line>
+			<Text>Janeiro</Text>
+			<Color>#FF4500</Color>
+			<MovieSlice>0</MovieSlice><!--Movimentar uma fatia de pizza partindo do centro-->
+			<Series>
+				<Serie>30</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Fevereiro</Text>
+			<Color>#4B0082</Color>
+			<MovieSlice>10</MovieSlice>
+			<Series>
+				<Serie>40</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Março</Text>
+			<Color>#00FF00</Color>
+			<MovieSlice>0</MovieSlice>
+			<Series>
+				<Serie>80</Serie>
+			</Series>
+		</Line>
+	</Data>
+</AdderiGrafico>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdderiGrafico>
+	<Style>
+		<Type>Pie</Type> <!-- Doughnut, Pie -->
+		<BackgroundTransparent>False</BackgroundTransparent>
+		<BackgroundColor>#836FFF</BackgroundColor>
+	</Style>
+	<Title>
+		<Visible>True</Visible>
+		<Text>Vendas</Text>
+		<Font>Calibri</Font>
+		<Size>25</Size>
+		<Style>Strikeout</Style>
+		<Color>#8B0000</Color>
+	</Title>
+	<Legend>
+		<Visible>True</Visible>
+		<Font>Calibri</Font>
+		<Size>22</Size>
+		<Style>Strikeout</Style>
+		<Color>#00BFFF</Color>
+		<BackgroundOpacity>200</BackgroundOpacity>
+		<BackgroundTransparent>True</BackgroundTransparent>
+		<BackgroundColor>#FFFFFF</BackgroundColor>
+		<DirectionHorizontal>True</DirectionHorizontal>
+		<PercentageHorizontal>25</PercentageHorizontal>
+		<PositionHorizontal>Right</PositionHorizontal>
+		<PositionVertical>Top</PositionVertical>
+		<MarkerWidth>13</MarkerWidth>
+		<MarkerHeight>9</MarkerHeight>
+		<Picture>{VP:P}</Picture><!--{A} = Texto dos dados //{V} = Valor dos dados // {S} = Nome da série // {VP:P} = Porcentagem do valor total // {V:F2} = Formata o valor com 2 casas decimais // {V:C} = Formata o valor como moeda // {VP:P2} = Mostra a porcentagem com 2 casas decimais // {V:0}% = Exibe o valor inteiro da serie com o simbolo de % // R${V:N2} = Valor em reais com duas casas decimais {A:dd/MM/yyyy HH:mm:ss} = Formatação data e hora -->
+	</Legend>
+	<Series>
+		<Serie>
+			<Text>Valor Contrato</Text>
+			<Color>#ADD8E6</Color>
+			<Border>True</Border>
+			<LineWidth>2</LineWidth>
+			<Label>
+				<Visible>True</Visible>
+				<Border>False</Border>
+				<Position>Inside</Position> <!-- Radial, Tangent, TwoColumns, Outside, Inside -->
+				<Font>Calibri</Font>
+				<Size>9</Size>
+				<Style>Regular</Style>
+				<Color>#1C1C1C</Color>
+				<BackgroundTransparent>True</BackgroundTransparent>
+				<BackgroundColor>#B0E0E6</BackgroundColor>
+				<Picture>{V:0}%</Picture>
+			</Label>
+		</Serie>
+	</Series>
+	<Data>
+		<Line>
+			<Text>Janeiro</Text>
+			<Color>#FF4500</Color>
+			<MovieSlice>0</MovieSlice>
+			<Series>
+				<Serie>30</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Fevereiro</Text>
+			<Color>#4B0082</Color>
+			<MovieSlice>10</MovieSlice>
+			<Series>
+				<Serie>40</Serie>
+			</Series>
+		</Line>
+		<Line>
+			<Text>Março</Text>
+			<Color>#00FF00</Color>
+			<MovieSlice>0</MovieSlice>
+			<Series>
+				<Serie>80</Serie>
+			</Series>
+		</Line>
+	</Data>
+</AdderiGrafico>

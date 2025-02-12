@@ -1,0 +1,167 @@
+"<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text="Ordens de Serviço" />
+  <DataSources>
+    <SqlDataSource Name="ADDERI" ComponentName="dashboardSqlDataSource1">
+      <Connection Name="Connection" ConnectionString="xpoprovider=ODPManaged;data source=&quot;(DESCRIPTION =&#xD;&#xA;    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))&#xD;&#xA;    (CONNECT_DATA =&#xD;&#xA;      (SERVER = DEDICATED)&#xD;&#xA;      (SERVICE_NAME = orcl2)&#xD;&#xA;    )&#xD;&#xA;  )&quot;;user id=ADDERI;password=ADDERI" />
+      <Query Type="SelectQuery" Name="OS">
+        <Tables>
+          <Table Name="VWOS" Alias="OS" X="30" Y="30" Width="125" Height="634" />
+        </Tables>
+        <Columns>
+          <Column Table="OS" Name="OS" Alias="Ordem de Serviço" />
+          <Column Table="OS" Name="DATAEMISSAO" Alias="Data de Emissão" />
+          <Column Table="OS" Name="DATAOS" Alias="Data da OS" />
+          <Column Table="OS" Name="PESSOA" Alias="Pessoa" />
+          <Column Table="OS" Name="PROJETO" Alias="Projeto" />
+          <Column Table="OS" Name="DESCRICAOPROJETO" Alias="Projeto Nome" />
+          <Column Table="OS" Name="CLIENTECODIGO" Alias="Cliente Código" />
+          <Column Table="OS" Name="CLIENTENOME" Alias="Cliente Nome" />
+          <Column Table="OS" Name="CLIENTEAPELIDO" Alias="Cliente Apelido" />
+          <Column Table="OS" Name="RESPONSAVEL" Alias="Responsável" />
+          <Column Table="OS" Name="SOLICITADO" Alias="Solicitado" />
+          <Column Table="OS" Name="SOLUCAO" Alias="Solução" />
+          <Column Table="OS" Name="DATAENTREGA" Alias="Data de Entrega" />
+          <Column Table="OS" Name="SETOR" Alias="Setor" />
+          <Column Table="OS" Name="ATIVIDADEPRINCIPALCOD" Alias="Atividade OS Código" />
+          <Column Table="OS" Name="ATIVIDADECOD" Alias="Atividade Código" />
+          <Column Table="OS" Name="ATIVIDADE" Alias="Atividade" />
+          <Column Table="OS" Name="SEQUENCIAATIVIDADE" Alias="Seq. Atividade" />
+          <Column Table="OS" Name="DATAATIVIDADE" Alias="Data Início" />
+          <Column Table="OS" Name="HORAINICIO" Alias="Hora Início Atividade" />
+          <Column Table="OS" Name="DATATERMINO" Alias="Data Término" />
+          <Column Table="OS" Name="HORATERMINO" Alias="Hora Término" />
+          <Column Table="OS" Name="TECNICOCODIGO" Alias="Técnico Código" />
+          <Column Table="OS" Name="TECNICO" Alias="Técnico Nome" />
+          <Column Table="OS" Name="LOCAL" Alias="Local" />
+          <Column Table="OS" Name="TURNO" Alias="Turno" />
+          <Column Table="OS" Name="STATUSOS" Alias="Status OS" />
+          <Column Table="OS" Name="STATUSATIVIDADE" Alias="Status Atividade" />
+          <Column Table="OS" Name="INFORMACAOCOMPLEMENTAR" Alias="Informação Complementar" />
+          <Column Table="OS" Name="ATIVIDADEPRINCIPALDESC" Alias="Atividade OS Desc." />
+        </Columns>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="ADDERI">
+          <View Name="OS">
+            <Field Name="Ordem de Serviço" Type="String" />
+            <Field Name="Data de Emissão" Type="DateTime" />
+            <Field Name="Data da OS" Type="DateTime" />
+            <Field Name="Pessoa" Type="Int64" />
+            <Field Name="Projeto" Type="String" />
+            <Field Name="Projeto Nome" Type="String" />
+            <Field Name="Cliente Código" Type="String" />
+            <Field Name="Cliente Nome" Type="String" />
+            <Field Name="Cliente Apelido" Type="String" />
+            <Field Name="Responsável" Type="String" />
+            <Field Name="Solicitado" Type="String" />
+            <Field Name="Solução" Type="String" />
+            <Field Name="Data de Entrega" Type="DateTime" />
+            <Field Name="Setor" Type="String" />
+            <Field Name="Atividade OS Código" Type="Int16" />
+            <Field Name="Atividade Código" Type="Int16" />
+            <Field Name="Atividade" Type="String" />
+            <Field Name="Seq. Atividade" Type="Int16" />
+            <Field Name="Data Início" Type="DateTime" />
+            <Field Name="Hora Início Atividade" Type="String" />
+            <Field Name="Data Término" Type="DateTime" />
+            <Field Name="Hora Término" Type="String" />
+            <Field Name="Técnico Código" Type="Int64" />
+            <Field Name="Técnico Nome" Type="String" />
+            <Field Name="Local" Type="String" />
+            <Field Name="Turno" Type="String" />
+            <Field Name="Status OS" Type="String" />
+            <Field Name="Status Atividade" Type="String" />
+            <Field Name="Informação Complementar" Type="String" />
+            <Field Name="Atividade OS Desc." Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Gráfico 1" DataSource="dashboardSqlDataSource1" DataMember="OS">
+      <ColoringOptions UseGlobalColors="false" />
+      <DataItems>
+        <Dimension DataMember="Cliente Apelido" ColoringMode="Hue" TopNEnabled="true" TopNCount="15" TopNMeasure="DataItem1" DefaultId="DataItem0" />
+        <Dimension DataMember="Data de Emissão" DateTimeGroupInterval="None" DefaultId="DataItem2" />
+        <Measure DataMember="Ordem de Serviço" SummaryType="CountDistinct" DefaultId="DataItem1" />
+      </DataItems>
+      <HiddenDimensions>
+        <Dimension DefaultId="DataItem2" />
+      </HiddenDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Painel 1">
+          <AxisY Visible="false" ShowGridLines="false" />
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem1" />
+              <PointLabelOptions OverlappingMode="None" ContentType="Value" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" OutsidePosition="TopCenterHorizontal" />
+    </Chart>
+    <Card ComponentName="cardDashboardItem1" Name="Cartões 1" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="OS" ContentArrangementMode="FixedColumnCount">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Measure DataMember="Ordem de Serviço" SummaryType="CountDistinct" DefaultId="DataItem1" />
+        <Dimension DataMember="Atividade OS Desc." DefaultId="DataItem0" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem0" />
+      </SeriesDimensions>
+      <Card>
+        <ActualValue DefaultId="DataItem1" />
+        <AbsoluteVariationNumericFormat />
+        <PercentVariationNumericFormat />
+        <PercentOfTargetNumericFormat />
+        <LayoutTemplate Type="Stretched">
+          <TopValue Visible="true" ValueType="ActualValue" DimensionIndex="0" />
+          <MainValue Visible="true" ValueType="Title" DimensionIndex="0" />
+          <SubValue Visible="true" ValueType="Subtitle" DimensionIndex="0" />
+          <BottomValue1 Visible="true" ValueType="PercentVariation" DimensionIndex="0" />
+          <BottomValue2 Visible="true" ValueType="AbsoluteVariation" DimensionIndex="0" />
+          <DeltaIndicator Visible="true" />
+          <Sparkline Visible="true" />
+        </LayoutTemplate>
+      </Card>
+    </Card>
+    <RangeFilter ComponentName="rangeFilterDashboardItem1" Name="Filtro de Faixa 1" DataSource="dashboardSqlDataSource1" DataMember="OS" SelectedDateTimePeriodIndex="Este Mês">
+      <DataItems>
+        <Dimension DataMember="Data de Emissão" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
+        <Measure DataMember="Ordem de Serviço" SummaryType="Count" DefaultId="DataItem1" />
+      </DataItems>
+      <Argument DefaultId="DataItem0" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value DefaultId="DataItem1" />
+        </Simple>
+      </Series>
+      <DateTimePeriods>
+        <DateTimePeriod Name="Este Mês">
+          <StartLimit>
+            <FlowDateTimePeriodLimit Interval="Month" />
+          </StartLimit>
+          <EndLimit>
+            <FlowDateTimePeriodLimit Interval="Month" Offset="1" />
+          </EndLimit>
+        </DateTimePeriod>
+      </DateTimePeriods>
+    </RangeFilter>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Weight="100">
+      <LayoutItem DashboardItem="cardDashboardItem1" Weight="33.692142088266955" />
+      <LayoutGroup Orientation="Vertical" Weight="66.307857911733052">
+        <LayoutItem DashboardItem="rangeFilterDashboardItem1" Weight="30.384615384615383" />
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="69.615384615384613" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>"
