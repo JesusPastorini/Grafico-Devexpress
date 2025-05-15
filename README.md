@@ -14,6 +14,8 @@ Este componente requer uma **assinatura válida do Devexpress v19.1** para funci
 
 ## 🖼️ Galeria de Gráficos
 
+2️⃣1️⃣ Tipos de Gráficos suportados
+
 ### 📊 Gráfico de Barras Verticais
 ![Gráfico de Barras](graficoBarra.jpg)
 
@@ -22,8 +24,6 @@ Este componente requer uma **assinatura válida do Devexpress v19.1** para funci
 
 ### 📈 Gráfico de Linhas
 ![Gráfico de Linhas](./grafico-linhas.jpg)  
-
-## 📋 Tipos de Gráficos Suportados
 
 ```xml
 <!-- Exemplo Completo - Gráfico de Barras -->
