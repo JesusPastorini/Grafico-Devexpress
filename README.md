@@ -15,13 +15,13 @@ Este componente requer uma **assinatura válida do Devexpress v19.1** para funci
 ## 🖼️ Galeria de Gráficos
 
 ### 📊 Gráfico de Barras Verticais
-![Gráfico de Barras](https://via.placeholder.com/800x500/3498db/ffffff?text=Exemplo+Barras)  
+![Gráfico de Barras](graficoBarras.jpg)
 
 ### 🥧 Gráfico de Pizza
-![Gráfico de Pizza](https://via.placeholder.com/600x600/e74c3c/ffffff?text=Exemplo+Pizza)  
+![Gráfico de Pizza](./graficoPizza.jpg)  
 
 ### 📈 Gráfico de Linhas
-![Gráfico de Linhas]([https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F687221224384658306%2F&psig=AOvVaw3poQjnBHVhyijcYtKv3ytD&ust=1747414291678000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiZ6tX3pY0DFQAAAAAdAAAAABAE](https://pin.it/1TYjKlkD8))  
+![Gráfico de Linhas](grafico-linha.jpg)  
 
 ## 📋 Tipos de Gráficos Suportados
 
