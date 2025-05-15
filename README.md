@@ -15,7 +15,7 @@ Este componente requer uma **assinatura válida do Devexpress v19.1** para funci
 ## 🖼️ Galeria de Gráficos
 
 ### 📊 Gráfico de Barras Verticais
-![Gráfico de Barras](graficoBarras.jpg)
+![Gráfico de Barras](graficoBarra.jpg)
 
 ### 🥧 Gráfico de Pizza
 ![Gráfico de Pizza](./graficoPizza.jpg)  
