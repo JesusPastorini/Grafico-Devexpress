@@ -1,7 +1,5 @@
 # 📊 Gerador de Gráficos Devexpress (Magic XPA + C#)
 
-![Banner](https://via.placeholder.com/1200x400/2c3e50/ffffff?text=Gerador+de+Gráficos+Devexpress)  
-*(Substitua por imagem real do seu componente em ação)*
 
 ## ⚠️ Requisitos de Licenciamento
 🔑 **Licença Obrigatória**:  
