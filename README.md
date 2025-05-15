@@ -21,7 +21,7 @@ Este componente requer uma **assinatura válida do Devexpress v19.1** para funci
 ![Gráfico de Pizza](./graficoPizza.jpg)  
 
 ### 📈 Gráfico de Linhas
-![Gráfico de Linhas](grafico-linha.jpg)  
+![Gráfico de Linhas](./grafico-linhas.jpg)  
 
 ## 📋 Tipos de Gráficos Suportados
 
